@@ -26,6 +26,7 @@ def extrair_curva(d: np.ndarray, vertices: list, data_base_str: str, feriados: n
         curva.append({
             "data":                v_str,
             "du":                  du,
+            "prazo_anos":          round(p, 4),
             "fator_desconto":      round(fator, 6),   
             "taxa_spot":           round(taxa, 6),
         })

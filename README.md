@@ -251,78 +251,91 @@ Localmente se obteve a seguinte saída a partir do arquivo ANBIMA (2026/06/16):
     {
       "data": "2026-07-01",
       "du": 11,
+      "prazo_anos": 0.0437,
       "fator_desconto": 0.994176,
       "taxa_spot": 0.143177
     },
     {
       "data": "2026-10-01",
       "du": 76,
+      "prazo_anos": 0.3016,
       "fator_desconto": 0.961495,
       "taxa_spot": 0.139054
     },
     {
       "data": "2027-01-01",
       "du": 138,
+      "prazo_anos": 0.5476,
       "fator_desconto": 0.93018,
       "taxa_spot": 0.1413
     },
     {
       "data": "2027-04-01",
       "du": 198,
+      "prazo_anos": 0.7857,
       "fator_desconto": 0.901484,
       "taxa_spot": 0.141107
     },
     {
       "data": "2027-07-01",
       "du": 261,
+      "prazo_anos": 1.0357,
       "fator_desconto": 0.871037,
       "taxa_spot": 0.142604
     },
     {
       "data": "2027-10-01",
       "du": 326,
+      "prazo_anos": 1.2937,
       "fator_desconto": 0.840725,
       "taxa_spot": 0.143518
     },
     {
       "data": "2028-01-01",
       "du": 389,
+      "prazo_anos": 1.5437,
       "fator_desconto": 0.812937,
       "taxa_spot": 0.14358
     },
     {
       "data": "2028-04-01",
       "du": 452,
+      "prazo_anos": 1.7937,
       "fator_desconto": 0.786011,
       "taxa_spot": 0.14367
     },
     {
       "data": "2028-07-01",
       "du": 513,
+      "prazo_anos": 2.0357,
       "fator_desconto": 0.760758,
       "taxa_spot": 0.14376
     },
     {
       "data": "2029-01-01",
       "du": 637,
+      "prazo_anos": 2.5278,
       "fator_desconto": 0.711049,
       "taxa_spot": 0.14443
     },
     {
       "data": "2029-07-01",
       "du": 761,
+      "prazo_anos": 3.0198,
       "fator_desconto": 0.665082,
       "taxa_spot": 0.1446
     },
     {
       "data": "2030-01-01",
       "du": 886,
+      "prazo_anos": 3.5159,
       "fator_desconto": 0.622376,
       "taxa_spot": 0.144396
     },
     {
       "data": "2032-01-01",
       "du": 1390,
+      "prazo_anos": 5.5159,
       "fator_desconto": 0.476355,
       "taxa_spot": 0.143904
     }
