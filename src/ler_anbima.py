@@ -6,7 +6,7 @@ def ler_titulos_anbima(caminho: str) -> tuple[str, pd.DataFrame]:
 
     Retorna
     -------
-    data_base : str   — data de referência no formato 'YYYY-MM-DD'
+    data_base : str --- data de referência no formato 'YYYY-MM-DD'
     df        : DataFrame com colunas [Titulo, Data Vencimento, PU, Tx. Indicativas]
                 filtrado para LTN e NTN-F, ordenado por vencimento.
     """

@@ -73,7 +73,7 @@ def construir_sistema(df: pd.DataFrame, data_base_str: str) -> tuple:
         ntnf = candidatos[candidatos["Titulo"] == "NTN-F"]
         if not ntnf.empty:
             fluxos = ntnf.iloc[0]["Fluxos"]
-            datas_cupom = sorted([d for d in fluxos.keys() if d != venc]) #fluxo.keys = datas que foram geradas no gerar_fluxo
+            datas_cupom = sorted([d for d in fluxos.keys() if d != venc]) # fluxo.keys = datas que foram geradas no gerar_fluxo
 
             cupons_cobertos = all(d in vertices_confirmados for d in datas_cupom)
 
@@ -94,7 +94,7 @@ def construir_sistema(df: pd.DataFrame, data_base_str: str) -> tuple:
 
     for index, (_, row) in enumerate(df_sel.iterrows()):
         for data, valor in row["Fluxos"].items():
-            data_matriz = date_idx.get(data) # coluna 
+            data_matriz = date_idx.get(data) # coluna da data do cupom/vencimento
             if data_matriz is not None:
                 C[index, data_matriz] = valor
 

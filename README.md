@@ -10,13 +10,13 @@ Solução para o desafio técnico de construção da curva zero-cupom a partir d
 # Instalar dependências
 pip install numpy pandas openpyxl xlrd
 
-# Executar o projeto (na raiz do projeto)
+# Executar o projeto (na raiz)
 python main.py data/ANBIMA_tabela.txt data/feriados_nacionais.xls
 ```
 
 ---
 
-## Estrutura do Projeto
+## Estrutura
 
 O projeto foi construído com separação de responsabilidades para garantir escalabilidade e fácil manutenção. Os arquivos principais estão dentro das pasta "src".
 
@@ -45,7 +45,7 @@ python -m pytest tests/test_reprecificacao.py -v
 ```
 
 ATENÇÃO: Variáveis CAMINHO_FERIADOS e CAMINHO_ANBIMA do arquivo de teste contêm o caminho 
-e nome dos arquivos de dados, ou seja, variam, se atentar na hora de rodar os testes
+e nome dos arquivos de dados, ou seja, variam, se atentar na hora de rodar os testes.
 
 ## Cobertura dos Testes
 
@@ -139,6 +139,7 @@ taxa_spot = fator_desconto ^ (-1 / prazo_anos) - 1
 onde:
 
 prazo_anos = DU / 252
+DU = Contagem de dias úteis (DU), excluindo fins de semana e feriados nacionais.
 
 ---
 
@@ -199,6 +200,8 @@ e depois:
 ```bash
 "aprovado": bool(max_erro < tolerancia),
 ```
+
+onde nesse caso tolerancia = float(1e-4)
 
 ## Controle de Precisão
 

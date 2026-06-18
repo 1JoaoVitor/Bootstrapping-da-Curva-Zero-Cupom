@@ -5,7 +5,7 @@ def ler_feriados(caminho: str) -> np.ndarray:
     """
     Lê o arquivo de feriados da ANBIMA (formato excel) e retorna
     um array numpy de datas no formato datetime64[D], usado pelo
-    np.busday_count para exclusão eficiente.
+    np.busday_count para exclusão mais eficiente.
 
     Tudo que  não seja uma data válida é filtrado antes de converter.
     """
