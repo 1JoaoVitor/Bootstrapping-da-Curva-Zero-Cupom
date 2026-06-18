@@ -4,6 +4,28 @@ Solução para o desafio técnico de construção da curva zero-cupom a partir d
 
 ---
 
+## Resumo Técnico
+
+**(a) Modelagem**
+O problema foi modelado como um sistema linear **C · d = P**, onde C é a matriz
+de fluxos de caixa, d o vetor de fatores de desconto (incógnitas) e P o vetor
+de preços de mercado. Ordenando os títulos por vencimento e priorizando LTNs,
+a matriz C torna-se naturalmente **triangular inferior** — cada novo título
+adiciona exatamente um novo vértice, e seus cupons intermediários recaem sobre
+vértices já resolvidos.
+
+**(b) Método de Resolução**
+Escolheu-se **substituição progressiva** em vez de `np.linalg.solve()`, por
+explorar explicitamente a estrutura triangular: cada fator de desconto depende
+apenas dos anteriores, tornando o processo causal e transparente matematicamente.
+
+**(c) Complexidade**
+**O(n²)**, onde n é o número de vértices da curva. Os passos dominantes são a
+montagem da matriz, a substituição progressiva e a validação por reprecificação
+— todos quadráticos. Nenhuma etapa atinge O(n³).
+
+---
+
 ## Como Executar
 
 ```bash
