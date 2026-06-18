@@ -27,6 +27,7 @@ O projeto foi construído com separação de responsabilidades para garantir esc
 | `calculo_du.py` | Contagem de dias úteis e cálculo dos prazos |
 | `matriz_titulos.py` | Construção dos fluxos e resolução do sistema linear |
 | `curva_zero.py` | Extração das taxas spot e reprecificação |
+| `test_curva_zero.py` | Testes automatizados do bootstrapping com Dados Reais |
 
 ---
 
@@ -40,7 +41,7 @@ O projeto inclui uma suíte de testes construída com pytest, desenhada para val
 
 pip install pytest
 
-python -m pytest tests/test_reprecificacao.py -v
+python -m pytest tests/test_curva_zero.py -v
 
 ```
 

@@ -1,8 +1,8 @@
 """
-test_reprecificacao.py — Testes automatizados do bootstrapping com Dados Reais
+test_curva_zero.py - Testes automatizados do bootstrapping com Dados Reais
 
 Execução (na raiz do projeto):
-    python -m pytest tests/test_reprecificacao.py -v
+    python -m pytest tests/test_curva_zero.py -v
 
 ATENÇÃO: Variáveis CAMINHO_FERIADOS e CAMINHO_ANBIMA desse arquivo contêm o caminho e 
 nome dos arquivos de dados, ou seja, variam, se atentar na hora de rodar os testes
